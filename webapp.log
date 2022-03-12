@@ -1,0 +1,1207 @@
+2022/03/08 17:18:18 main.go:15: test
+2022/03/08 19:51:14 users.go:27: sql: converting argument $1 type: unsupported type func() uuid.UUID, a func
+2022/03/08 19:52:27 users.go:27: near "valuse": syntax error
+2022/03/10 14:47:44 users.go:28: near ",": syntax error
+2022/03/10 14:51:40 users.go:28: near ",": syntax error
+2022/03/10 15:13:44 users.go:28: near ",": syntax error
+2022/03/10 15:20:09 todos.go:22: table todos has no column named user_id
+2022/03/10 18:19:06 server.go:3160: http: panic serving 127.0.0.1:50537: open app/views/templates/layout.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0x1400010d400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x102ebd660, 0x1400009a090})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x102f0b6f0, 0x140000ae000}, {0x102e9c800, 0x102f02598}, {0x1400010fa08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102f0b6f0, 0x140000ae000}, 0x14000196000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x102f01488, {0x102f0b6f0, 0x140000ae000}, 0x14000196000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x103144e60, {0x102f0b6f0, 0x140000ae000}, 0x14000196000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x102f0b6f0, 0x140000ae000}, 0x14000196000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d400, {0x102f0cee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:19:07 server.go:3160: http: panic serving 127.0.0.1:50538: open app/views/templates/layout.html: no such file or directory
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0x1400010d4a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x102ebd660, 0x1400007d890})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x102f0b6f0, 0x1400015c0e0}, {0x102e9c800, 0x102f02598}, {0x14000115a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102f0b6f0, 0x1400015c0e0}, 0x14000154100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x102f01488, {0x102f0b6f0, 0x1400015c0e0}, 0x14000154100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x103144e60, {0x102f0b6f0, 0x1400015c0e0}, 0x14000154100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x102f0b6f0, 0x1400015c0e0}, 0x14000154100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d4a0, {0x102f0cee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:19:07 server.go:3160: http: panic serving 127.0.0.1:50539: open app/views/templates/layout.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0x1400010d540)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x102ebd660, 0x1400009a180})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x102f0b6f0, 0x140000ae0e0}, {0x102e9c800, 0x102f02598}, {0x14000050a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102f0b6f0, 0x140000ae0e0}, 0x14000154200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x102f01488, {0x102f0b6f0, 0x140000ae0e0}, 0x14000154200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x103144e60, {0x102f0b6f0, 0x140000ae0e0}, 0x14000154200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x102f0b6f0, 0x140000ae0e0}, 0x14000154200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d540, {0x102f0cee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:19:07 server.go:3160: http: panic serving 127.0.0.1:50540: open app/views/templates/layout.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0x140000f2000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x102ebd660, 0x1400009a360})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x102f0b6f0, 0x140000ae1c0}, {0x102e9c800, 0x102f02598}, {0x14000050a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102f0b6f0, 0x140000ae1c0}, 0x140000f4000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x102f01488, {0x102f0b6f0, 0x140000ae1c0}, 0x140000f4000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x103144e60, {0x102f0b6f0, 0x140000ae1c0}, 0x140000f4000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x102f0b6f0, 0x140000ae1c0}, 0x140000f4000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000f2000, {0x102f0cee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:19:08 server.go:3160: http: panic serving 127.0.0.1:50541: open app/views/templates/layout.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0x140000f20a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x102ebd660, 0x1400018e120})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x102f0b6f0, 0x140001ac000}, {0x102e9c800, 0x102f02598}, {0x140001b9a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102f0b6f0, 0x140001ac000}, 0x14000154300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x102f01488, {0x102f0b6f0, 0x140001ac000}, 0x14000154300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x103144e60, {0x102f0b6f0, 0x140001ac000}, 0x14000154300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x102f0b6f0, 0x140001ac000}, 0x14000154300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000f20a0, {0x102f0cee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:19:08 server.go:3160: http: panic serving 127.0.0.1:50542: open app/views/templates/layout.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0x140000f2140)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x102ebd660, 0x1400018e210})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x102f0b6f0, 0x140001ac0e0}, {0x102e9c800, 0x102f02598}, {0x14000050a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102f0b6f0, 0x140001ac0e0}, 0x140000f4100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x102f01488, {0x102f0b6f0, 0x140001ac0e0}, 0x140000f4100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x103144e60, {0x102f0b6f0, 0x140001ac0e0}, 0x140000f4100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x102f0b6f0, 0x140001ac0e0}, 0x140000f4100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000f2140, {0x102f0cee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:19:08 server.go:3160: http: panic serving 127.0.0.1:50543: open app/views/templates/layout.html: no such file or directory
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0x1400010d5e0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x102ebd660, 0x1400007da70})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x102f0b6f0, 0x1400015c1c0}, {0x102e9c800, 0x102f02598}, {0x14000056a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102f0b6f0, 0x1400015c1c0}, 0x14000154400)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x102f01488, {0x102f0b6f0, 0x1400015c1c0}, 0x14000154400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x103144e60, {0x102f0b6f0, 0x1400015c1c0}, 0x14000154400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x102f0b6f0, 0x1400015c1c0}, 0x14000154400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d5e0, {0x102f0cee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:19:13 server.go:3160: http: panic serving 127.0.0.1:50544: open app/views/templates/layout.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0x140000f21e0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x102ebd660, 0x1400018e330})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x102f0b6f0, 0x140001ac1c0}, {0x102e9c800, 0x102f02598}, {0x14000056a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102f0b6f0, 0x140001ac1c0}, 0x14000154500)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x102f01488, {0x102f0b6f0, 0x140001ac1c0}, 0x14000154500)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x103144e60, {0x102f0b6f0, 0x140001ac1c0}, 0x14000154500)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x102f0b6f0, 0x140001ac1c0}, 0x14000154500)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000f21e0, {0x102f0cee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:19:13 server.go:3160: http: panic serving 127.0.0.1:50545: open app/views/templates/layout.html: no such file or directory
+goroutine 27 [running]:
+net/http.(*conn).serve.func1(0x140000f2280)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x102ebd660, 0x1400007db90})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x102f0b6f0, 0x1400015c2a0}, {0x102e9c800, 0x102f02598}, {0x14000187a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102f0b6f0, 0x1400015c2a0}, 0x140000f4200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x102f01488, {0x102f0b6f0, 0x1400015c2a0}, 0x140000f4200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x103144e60, {0x102f0b6f0, 0x1400015c2a0}, 0x140000f4200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x102f0b6f0, 0x1400015c2a0}, 0x140000f4200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000f2280, {0x102f0cee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:19:13 server.go:3160: http: panic serving 127.0.0.1:50546: open app/views/templates/layout.html: no such file or directory
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0x140000f2320)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x102ebd660, 0x1400009a720})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x102f0b6f0, 0x140000ae2a0}, {0x102e9c800, 0x102f02598}, {0x14000051a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102f0b6f0, 0x140000ae2a0}, 0x140000f4300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x102f01488, {0x102f0b6f0, 0x140000ae2a0}, 0x140000f4300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x103144e60, {0x102f0b6f0, 0x140000ae2a0}, 0x140000f4300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x102f0b6f0, 0x140000ae2a0}, 0x140000f4300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000f2320, {0x102f0cee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:20:49 server.go:3160: http: panic serving 127.0.0.1:50562: template: layout.html:15: unexpected <define> in command
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0x1400010d400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x101337a60, 0x14000192070})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013976f0, 0x140000ae000}, {0x101328800, 0x10138e598}, {0x1400010fa08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1013976f0, 0x140000ae000}, 0x140001a2000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x10138d488, {0x1013976f0, 0x140000ae000}, 0x140001a2000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1015d0e60, {0x1013976f0, 0x140000ae000}, 0x140001a2000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1013976f0, 0x140000ae000}, 0x140001a2000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d400, {0x101398ee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:20:49 server.go:3160: http: panic serving 127.0.0.1:50563: template: layout.html:15: unexpected <define> in command
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0x1400010d4a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x101337a60, 0x140000ac0e0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013976f0, 0x140000ae0e0}, {0x101328800, 0x10138e598}, {0x14000050a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1013976f0, 0x140000ae0e0}, 0x14000154100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x10138d488, {0x1013976f0, 0x140000ae0e0}, 0x14000154100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1015d0e60, {0x1013976f0, 0x140000ae0e0}, 0x14000154100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1013976f0, 0x140000ae0e0}, 0x14000154100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d4a0, {0x101398ee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:20:49 server.go:3160: http: panic serving 127.0.0.1:50564: template: layout.html:15: unexpected <define> in command
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0x140000dc000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x101337a60, 0x140000ac1d0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013976f0, 0x140000ae1c0}, {0x101328800, 0x10138e598}, {0x14000051a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1013976f0, 0x140000ae1c0}, 0x140000de000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x10138d488, {0x1013976f0, 0x140000ae1c0}, 0x140000de000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1015d0e60, {0x1013976f0, 0x140000ae1c0}, 0x140000de000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1013976f0, 0x140000ae1c0}, 0x140000de000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000dc000, {0x101398ee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:20:50 server.go:3160: http: panic serving 127.0.0.1:50565: template: layout.html:15: unexpected <define> in command
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0x14000230000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x101337a60, 0x14000013090})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013976f0, 0x1400024a000}, {0x101328800, 0x10138e598}, {0x14000050a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1013976f0, 0x1400024a000}, 0x14000236000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x10138d488, {0x1013976f0, 0x1400024a000}, 0x14000236000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1015d0e60, {0x1013976f0, 0x1400024a000}, 0x14000236000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1013976f0, 0x1400024a000}, 0x14000236000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x14000230000, {0x101398ee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:20:52 server.go:3160: http: panic serving 127.0.0.1:50566: template: layout.html:15: unexpected <define> in command
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0x140001da000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x101337a60, 0x1400021c1a0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013976f0, 0x1400024a0e0}, {0x101328800, 0x10138e598}, {0x14000187a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1013976f0, 0x1400024a0e0}, 0x140001a2100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x10138d488, {0x1013976f0, 0x1400024a0e0}, 0x140001a2100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1015d0e60, {0x1013976f0, 0x1400024a0e0}, 0x140001a2100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1013976f0, 0x1400024a0e0}, 0x140001a2100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140001da000, {0x101398ee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:20:52 server.go:3160: http: panic serving 127.0.0.1:50567: template: layout.html:15: unexpected <define> in command
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0x140002300a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x101337a60, 0x14000013170})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013976f0, 0x1400015c0e0}, {0x101328800, 0x10138e598}, {0x14000050a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1013976f0, 0x1400015c0e0}, 0x14000236200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x10138d488, {0x1013976f0, 0x1400015c0e0}, 0x14000236200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1015d0e60, {0x1013976f0, 0x1400015c0e0}, 0x14000236200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1013976f0, 0x1400015c0e0}, 0x14000236200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140002300a0, {0x101398ee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:20:52 server.go:3160: http: panic serving 127.0.0.1:50568: template: layout.html:15: unexpected <define> in command
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0x1400010d540)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x101337a60, 0x14000192100})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013976f0, 0x1400015c1c0}, {0x101328800, 0x10138e598}, {0x14000050a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1013976f0, 0x1400015c1c0}, 0x14000154200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x10138d488, {0x1013976f0, 0x1400015c1c0}, 0x14000154200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1015d0e60, {0x1013976f0, 0x1400015c1c0}, 0x14000154200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1013976f0, 0x1400015c1c0}, 0x14000154200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d540, {0x101398ee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:20:57 server.go:3160: http: panic serving 127.0.0.1:50570: template: layout.html:15: unexpected <define> in command
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0x140001da0a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x101337a60, 0x1400021c220})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013976f0, 0x140001f8000}, {0x101328800, 0x10138e598}, {0x14000050a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1013976f0, 0x140001f8000}, 0x14000154300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x10138d488, {0x1013976f0, 0x140001f8000}, 0x14000154300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1015d0e60, {0x1013976f0, 0x140001f8000}, 0x14000154300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1013976f0, 0x140001f8000}, 0x14000154300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140001da0a0, {0x101398ee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:21:27 server.go:3160: http: panic serving 127.0.0.1:50571: template: layout.html:15: unexpected <define> in command
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0x140001da140)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x101337a60, 0x1400021c300})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013976f0, 0x1400024a1c0}, {0x101328800, 0x10138e598}, {0x14000188a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1013976f0, 0x1400024a1c0}, 0x140001a2200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x10138d488, {0x1013976f0, 0x1400024a1c0}, 0x140001a2200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1015d0e60, {0x1013976f0, 0x1400024a1c0}, 0x140001a2200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1013976f0, 0x1400024a1c0}, 0x140001a2200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140001da140, {0x101398ee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:21:27 server.go:3160: http: panic serving 127.0.0.1:50572: template: layout.html:15: unexpected <define> in command
+goroutine 55 [running]:
+net/http.(*conn).serve.func1(0x140001da1e0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x101337a60, 0x14000192260})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013976f0, 0x140001f80e0}, {0x101328800, 0x10138e598}, {0x14000050a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1013976f0, 0x140001f80e0}, 0x140001a2300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x10138d488, {0x1013976f0, 0x140001f80e0}, 0x140001a2300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1015d0e60, {0x1013976f0, 0x140001f80e0}, 0x140001a2300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1013976f0, 0x140001f80e0}, 0x140001a2300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140001da1e0, {0x101398ee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 18:21:27 server.go:3160: http: panic serving 127.0.0.1:50573: template: layout.html:15: unexpected <define> in command
+goroutine 43 [running]:
+net/http.(*conn).serve.func1(0x14000230140)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x101337a60, 0x14000013250})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013976f0, 0x1400024a2a0}, {0x101328800, 0x10138e598}, {0x14000188a08, 0x2, 0x2})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1013976f0, 0x1400024a2a0}, 0x14000236300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0x8c
+net/http.HandlerFunc.ServeHTTP(0x10138d488, {0x1013976f0, 0x1400024a2a0}, 0x14000236300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1015d0e60, {0x1013976f0, 0x1400024a2a0}, 0x14000236300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1013976f0, 0x1400024a2a0}, 0x14000236300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x14000230140, {0x101398ee0, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:15:41 server.go:3160: http: panic serving 127.0.0.1:50734: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0x1400013f4a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1013b1660, 0x140000981e0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013ff710, 0x140001920e0}, {0x101390800, 0x1013f65a0}, {0x140001259f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1013ff710, 0x140001920e0}, 0x140000a8000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1013f5490, {0x1013ff710, 0x140001920e0}, 0x140000a8000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x101638e60, {0x1013ff710, 0x140001920e0}, 0x140000a8000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x14000192000}, {0x1013ff710, 0x140001920e0}, 0x140000a8000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400013f4a0, {0x101400f00, 0x14000113530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:15:41 server.go:3160: http: panic serving 127.0.0.1:50735: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0x1400013f540)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1013b1660, 0x14000074150})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013ff710, 0x140001921c0}, {0x101390800, 0x1013f65a0}, {0x140000509f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1013ff710, 0x140001921c0}, 0x140000a8100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1013f5490, {0x1013ff710, 0x140001921c0}, 0x140000a8100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x101638e60, {0x1013ff710, 0x140001921c0}, 0x140000a8100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x14000192000}, {0x1013ff710, 0x140001921c0}, 0x140000a8100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400013f540, {0x101400f00, 0x14000113530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:15:41 server.go:3160: http: panic serving 127.0.0.1:50736: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0x140000e4000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1013b1660, 0x140000987e0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013ff710, 0x140000f0000}, {0x101390800, 0x1013f65a0}, {0x140000519f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1013ff710, 0x140000f0000}, 0x140000a8200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1013f5490, {0x1013ff710, 0x140000f0000}, 0x140000a8200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x101638e60, {0x1013ff710, 0x140000f0000}, 0x140000a8200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x14000192000}, {0x1013ff710, 0x140000f0000}, 0x140000a8200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000e4000, {0x101400f00, 0x14000113530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:15:42 server.go:3160: http: panic serving 127.0.0.1:50737: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 3 [running]:
+net/http.(*conn).serve.func1(0x14000214000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1013b1660, 0x14000098cf0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013ff710, 0x140000f00e0}, {0x101390800, 0x1013f65a0}, {0x140000519f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1013ff710, 0x140000f00e0}, 0x140000a8300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1013f5490, {0x1013ff710, 0x140000f00e0}, 0x140000a8300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x101638e60, {0x1013ff710, 0x140000f00e0}, 0x140000a8300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x14000192000}, {0x1013ff710, 0x140000f00e0}, 0x140000a8300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x14000214000, {0x101400f00, 0x14000113530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:15:42 server.go:3160: http: panic serving 127.0.0.1:50738: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 4 [running]:
+net/http.(*conn).serve.func1(0x140002140a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1013b1660, 0x140001a61b0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013ff710, 0x140001922a0}, {0x101390800, 0x1013f65a0}, {0x140000559f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1013ff710, 0x140001922a0}, 0x14000216000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1013f5490, {0x1013ff710, 0x140001922a0}, 0x14000216000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x101638e60, {0x1013ff710, 0x140001922a0}, 0x14000216000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x14000192000}, {0x1013ff710, 0x140001922a0}, 0x14000216000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140002140a0, {0x101400f00, 0x14000113530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:15:42 server.go:3160: http: panic serving 127.0.0.1:50739: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0x140000e40a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1013b1660, 0x14000074420})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1013ff710, 0x140000f01c0}, {0x101390800, 0x1013f65a0}, {0x140000519f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1013ff710, 0x140000f01c0}, 0x140000a8400)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1013f5490, {0x1013ff710, 0x140000f01c0}, 0x140000a8400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x101638e60, {0x1013ff710, 0x140000f01c0}, 0x140000a8400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x14000192000}, {0x1013ff710, 0x140000f01c0}, 0x140000a8400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000e40a0, {0x101400f00, 0x14000113530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:16:50 server.go:3160: http: panic serving 127.0.0.1:50743: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0x1400010d4a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1005a9660, 0x1400007d830})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1005f7710, 0x140000ae000}, {0x100588800, 0x1005ee5a0}, {0x1400010f9f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1005f7710, 0x140000ae000}, 0x140001a4000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1005ed490, {0x1005f7710, 0x140000ae000}, 0x140001a4000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100830e60, {0x1005f7710, 0x140000ae000}, 0x140001a4000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1005f7710, 0x140000ae000}, 0x140001a4000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d4a0, {0x1005f8f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:16:50 server.go:3160: http: panic serving 127.0.0.1:50744: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0x1400010d540)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1005a9660, 0x1400009a3c0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1005f7710, 0x140001ba000}, {0x100588800, 0x1005ee5a0}, {0x140001119f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1005f7710, 0x140001ba000}, 0x140001a4100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1005ed490, {0x1005f7710, 0x140001ba000}, 0x140001a4100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100830e60, {0x1005f7710, 0x140001ba000}, 0x140001a4100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1005f7710, 0x140001ba000}, 0x140001a4100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d540, {0x1005f8f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:16:50 server.go:3160: http: panic serving 127.0.0.1:50745: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0x140001ce000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1005a9660, 0x1400018e9f0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1005f7710, 0x140001ba0e0}, {0x100588800, 0x1005ee5a0}, {0x140000509f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1005f7710, 0x140001ba0e0}, 0x140001a4200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1005ed490, {0x1005f7710, 0x140001ba0e0}, 0x140001a4200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100830e60, {0x1005f7710, 0x140001ba0e0}, 0x140001a4200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1005f7710, 0x140001ba0e0}, 0x140001a4200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140001ce000, {0x1005f8f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:16:55 server.go:3160: http: panic serving 127.0.0.1:50750: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0x140000de000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1005a9660, 0x1400018ef00})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1005f7710, 0x140001ba1c0}, {0x100588800, 0x1005ee5a0}, {0x140000509f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1005f7710, 0x140001ba1c0}, 0x140001a4300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1005ed490, {0x1005f7710, 0x140001ba1c0}, 0x140001a4300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100830e60, {0x1005f7710, 0x140001ba1c0}, 0x140001a4300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1005f7710, 0x140001ba1c0}, 0x140001a4300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000de000, {0x1005f8f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:17:25 server.go:3160: http: panic serving 127.0.0.1:50751: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0x140000de0a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1005a9660, 0x1400007d950})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1005f7710, 0x140001ba2a0}, {0x100588800, 0x1005ee5a0}, {0x140000519f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1005f7710, 0x140001ba2a0}, 0x140000e0000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1005ed490, {0x1005f7710, 0x140001ba2a0}, 0x140000e0000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100830e60, {0x1005f7710, 0x140001ba2a0}, 0x140000e0000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1005f7710, 0x140001ba2a0}, 0x140000e0000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000de0a0, {0x1005f8f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:17:25 server.go:3160: http: panic serving 127.0.0.1:50752: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0x140001ce0a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1005a9660, 0x1400018f7a0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1005f7710, 0x140001ba380}, {0x100588800, 0x1005ee5a0}, {0x140000509f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1005f7710, 0x140001ba380}, 0x140001a4400)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1005ed490, {0x1005f7710, 0x140001ba380}, 0x140001a4400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100830e60, {0x1005f7710, 0x140001ba380}, 0x140001a4400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1005f7710, 0x140001ba380}, 0x140001a4400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140001ce0a0, {0x1005f8f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:17:25 server.go:3160: http: panic serving 127.0.0.1:50753: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 46 [running]:
+net/http.(*conn).serve.func1(0x140001ce140)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x1005a9660, 0x1400018fd10})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x1005f7710, 0x140001ba460}, {0x100588800, 0x1005ee5a0}, {0x140000509f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x1005f7710, 0x140001ba460}, 0x140001a4600)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1005ed490, {0x1005f7710, 0x140001ba460}, 0x140001a4600)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100830e60, {0x1005f7710, 0x140001ba460}, 0x140001a4600)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x1005f7710, 0x140001ba460}, 0x140001a4600)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140001ce140, {0x1005f8f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:20:20 server.go:3160: http: panic serving 127.0.0.1:50772: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0x1400010d360)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x104b15660, 0x1400018e240})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x104b63710, 0x1400021e000}, {0x104af4800, 0x104b5a5a0}, {0x1400010f9f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x104b63710, 0x1400021e000}, 0x140001a2000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x104b59490, {0x104b63710, 0x1400021e000}, 0x140001a2000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x104d9ce60, {0x104b63710, 0x1400021e000}, 0x140001a2000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x104b63710, 0x1400021e000}, 0x140001a2000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d360, {0x104b64f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:20:20 server.go:3160: http: panic serving 127.0.0.1:50773: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0x1400010d400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x104b15660, 0x1400007d7d0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x104b63710, 0x1400021e0e0}, {0x104af4800, 0x104b5a5a0}, {0x140000509f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x104b63710, 0x1400021e0e0}, 0x14000154100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x104b59490, {0x104b63710, 0x1400021e0e0}, 0x14000154100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x104d9ce60, {0x104b63710, 0x1400021e0e0}, 0x14000154100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x104b63710, 0x1400021e0e0}, 0x14000154100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d400, {0x104b64f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:20:20 server.go:3160: http: panic serving 127.0.0.1:50774: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0x140001e0000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x104b15660, 0x1400018e7b0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x104b63710, 0x140001ec000}, {0x104af4800, 0x104b5a5a0}, {0x140001879f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x104b63710, 0x140001ec000}, 0x140001a2100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x104b59490, {0x104b63710, 0x140001ec000}, 0x140001a2100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x104d9ce60, {0x104b63710, 0x140001ec000}, 0x140001a2100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x104b63710, 0x140001ec000}, 0x140001a2100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140001e0000, {0x104b64f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:21:20 server.go:3160: http: panic serving 127.0.0.1:50778: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0x1400010d4a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x104b15660, 0x1400007ddd0})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x104b63710, 0x1400015c0e0}, {0x104af4800, 0x104b5a5a0}, {0x140001879f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x104b63710, 0x1400015c0e0}, 0x140001a2200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x104b59490, {0x104b63710, 0x1400015c0e0}, 0x140001a2200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x104d9ce60, {0x104b63710, 0x1400015c0e0}, 0x140001a2200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x104b63710, 0x1400015c0e0}, 0x140001a2200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d4a0, {0x104b64f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:21:20 server.go:3160: http: panic serving 127.0.0.1:50779: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0x1400010d540)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x104b15660, 0x1400018eb70})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x104b63710, 0x140001ec0e0}, {0x104af4800, 0x104b5a5a0}, {0x140000559f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x104b63710, 0x140001ec0e0}, 0x14000154200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x104b59490, {0x104b63710, 0x140001ec0e0}, 0x14000154200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x104d9ce60, {0x104b63710, 0x140001ec0e0}, 0x14000154200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x104b63710, 0x140001ec0e0}, 0x14000154200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d540, {0x104b64f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/10 19:21:20 server.go:3160: http: panic serving 127.0.0.1:50780: open app/views/templates/publc_navbar.html: no such file or directory
+goroutine 11 [running]:
+net/http.(*conn).serve.func1(0x1400010d5e0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x104b15660, 0x140002ac360})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+html/template.Must(...)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x104b63710, 0x1400015c1c0}, {0x104af4800, 0x104b5a5a0}, {0x140001879f8, 0x3, 0x3})
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:17 +0x104
+todo_app/app/controllers.top({0x104b63710, 0x1400015c1c0}, 0x14000154300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:12 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x104b59490, {0x104b63710, 0x1400015c1c0}, 0x14000154300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x104d9ce60, {0x104b63710, 0x1400015c1c0}, 0x14000154300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x104b63710, 0x1400015c1c0}, 0x14000154300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d5e0, {0x104b64f00, 0x1400007d530})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:16:50 server.go:3160: http: panic serving 127.0.0.1:57444: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0x1400010d400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x100c18c60, 0x100e99410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x100c70430, 0x1400015c1c0}, 0x140001a2000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x100c70430, 0x1400015c1c0}, 0x140001a2000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x100c66088, {0x100c70430, 0x1400015c1c0}, 0x140001a2000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100eacec0, {0x100c70430, 0x1400015c1c0}, 0x140001a2000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x100c70430, 0x1400015c1c0}, 0x140001a2000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d400, {0x100c71c20, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:16:51 server.go:3160: http: panic serving 127.0.0.1:57445: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0x1400010d4a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x100c18c60, 0x100e99410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x100c70430, 0x140001b8000}, 0x140001a2100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x100c70430, 0x140001b8000}, 0x140001a2100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x100c66088, {0x100c70430, 0x140001b8000}, 0x140001a2100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100eacec0, {0x100c70430, 0x140001b8000}, 0x140001a2100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x100c70430, 0x140001b8000}, 0x140001a2100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d4a0, {0x100c71c20, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:16:51 server.go:3160: http: panic serving 127.0.0.1:57446: runtime error: invalid memory address or nil pointer dereference
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0x1400010d540)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x100c18c60, 0x100e99410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x100c70430, 0x140000ae000}, 0x14000150100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x100c70430, 0x140000ae000}, 0x14000150100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x100c66088, {0x100c70430, 0x140000ae000}, 0x14000150100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100eacec0, {0x100c70430, 0x140000ae000}, 0x14000150100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x100c70430, 0x140000ae000}, 0x14000150100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d540, {0x100c71c20, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:16:51 server.go:3160: http: panic serving 127.0.0.1:57447: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0x140000d8000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x100c18c60, 0x100e99410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x100c70430, 0x140000ae0e0}, 0x140000da000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x100c70430, 0x140000ae0e0}, 0x140000da000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x100c66088, {0x100c70430, 0x140000ae0e0}, 0x140000da000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100eacec0, {0x100c70430, 0x140000ae0e0}, 0x140000da000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x100c70430, 0x140000ae0e0}, 0x140000da000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000d8000, {0x100c71c20, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:25:11 server.go:3160: http: panic serving 127.0.0.1:57472: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0x1400010d400)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x105240c60, 0x1054c1410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x105298450, 0x140001ac000}, 0x14000196000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x105298450, 0x140001ac000}, 0x14000196000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x10528e088, {0x105298450, 0x140001ac000}, 0x14000196000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1054d4ec0, {0x105298450, 0x140001ac000}, 0x14000196000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x105298450, 0x140001ac000}, 0x14000196000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d400, {0x105299c40, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:25:11 server.go:3160: http: panic serving 127.0.0.1:57473: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0x1400010d4a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x105240c60, 0x1054c1410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x105298450, 0x1400015c0e0}, 0x14000150100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x105298450, 0x1400015c0e0}, 0x14000150100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x10528e088, {0x105298450, 0x1400015c0e0}, 0x14000150100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1054d4ec0, {0x105298450, 0x1400015c0e0}, 0x14000150100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x105298450, 0x1400015c0e0}, 0x14000150100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d4a0, {0x105299c40, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:25:11 server.go:3160: http: panic serving 127.0.0.1:57474: runtime error: invalid memory address or nil pointer dereference
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0x1400010d540)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x105240c60, 0x1054c1410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x105298450, 0x1400015c1c0}, 0x14000150200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x105298450, 0x1400015c1c0}, 0x14000150200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x10528e088, {0x105298450, 0x1400015c1c0}, 0x14000150200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1054d4ec0, {0x105298450, 0x1400015c1c0}, 0x14000150200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x105298450, 0x1400015c1c0}, 0x14000150200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400010d540, {0x105299c40, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:25:16 server.go:3160: http: panic serving 127.0.0.1:57476: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0x1400009c000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x105240c60, 0x1054c1410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x105298450, 0x140001ac0e0}, 0x14000150300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x105298450, 0x140001ac0e0}, 0x14000150300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x10528e088, {0x105298450, 0x140001ac0e0}, 0x14000150300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1054d4ec0, {0x105298450, 0x140001ac0e0}, 0x14000150300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x105298450, 0x140001ac0e0}, 0x14000150300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400009c000, {0x105299c40, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:25:16 server.go:3160: http: panic serving 127.0.0.1:57477: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0x1400009c0a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x105240c60, 0x1054c1410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x105298450, 0x1400015c2a0}, 0x140000a4000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x105298450, 0x1400015c2a0}, 0x140000a4000)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x10528e088, {0x105298450, 0x1400015c2a0}, 0x140000a4000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1054d4ec0, {0x105298450, 0x1400015c2a0}, 0x140000a4000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x105298450, 0x1400015c2a0}, 0x140000a4000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400009c0a0, {0x105299c40, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:25:16 server.go:3160: http: panic serving 127.0.0.1:57478: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0x1400009c140)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x105240c60, 0x1054c1410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x105298450, 0x140000b8000}, 0x140000a4100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x105298450, 0x140000b8000}, 0x140000a4100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x10528e088, {0x105298450, 0x140000b8000}, 0x140000a4100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1054d4ec0, {0x105298450, 0x140000b8000}, 0x140000a4100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x105298450, 0x140000b8000}, 0x140000a4100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400009c140, {0x105299c40, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:25:46 server.go:3160: http: panic serving 127.0.0.1:57479: runtime error: invalid memory address or nil pointer dereference
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0x1400009c1e0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x105240c60, 0x1054c1410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x105298450, 0x140001ac1c0}, 0x14000196100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x105298450, 0x140001ac1c0}, 0x14000196100)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x10528e088, {0x105298450, 0x140001ac1c0}, 0x14000196100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1054d4ec0, {0x105298450, 0x140001ac1c0}, 0x14000196100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x105298450, 0x140001ac1c0}, 0x14000196100)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400009c1e0, {0x105299c40, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:25:46 server.go:3160: http: panic serving 127.0.0.1:57480: runtime error: invalid memory address or nil pointer dereference
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0x1400009c280)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x105240c60, 0x1054c1410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x105298450, 0x1400015c380}, 0x140000a4200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x105298450, 0x1400015c380}, 0x140000a4200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x10528e088, {0x105298450, 0x1400015c380}, 0x140000a4200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1054d4ec0, {0x105298450, 0x1400015c380}, 0x140000a4200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x105298450, 0x1400015c380}, 0x140000a4200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400009c280, {0x105299c40, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:25:46 server.go:3160: http: panic serving 127.0.0.1:57481: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0x1400009c320)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x105240c60, 0x1054c1410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x105298450, 0x140000b80e0}, 0x140000a4300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x105298450, 0x140000b80e0}, 0x140000a4300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x10528e088, {0x105298450, 0x140000b80e0}, 0x140000a4300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1054d4ec0, {0x105298450, 0x140000b80e0}, 0x140000a4300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x105298450, 0x140000b80e0}, 0x140000a4300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400009c320, {0x105299c40, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:26:46 server.go:3160: http: panic serving 127.0.0.1:57487: runtime error: invalid memory address or nil pointer dereference
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0x140001fe000)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x105240c60, 0x1054c1410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x105298450, 0x140001ac2a0}, 0x14000196300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x105298450, 0x140001ac2a0}, 0x14000196300)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x10528e088, {0x105298450, 0x140001ac2a0}, 0x14000196300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1054d4ec0, {0x105298450, 0x140001ac2a0}, 0x14000196300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x105298450, 0x140001ac2a0}, 0x14000196300)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140001fe000, {0x105299c40, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:26:46 server.go:3160: http: panic serving 127.0.0.1:57488: runtime error: invalid memory address or nil pointer dereference
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0x140001fe0a0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x105240c60, 0x1054c1410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x105298450, 0x140001ac380}, 0x14000196200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x105298450, 0x140001ac380}, 0x14000196200)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x10528e088, {0x105298450, 0x140001ac380}, 0x14000196200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1054d4ec0, {0x105298450, 0x140001ac380}, 0x14000196200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x105298450, 0x140001ac380}, 0x14000196200)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140001fe0a0, {0x105299c40, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
+2022/03/11 17:26:46 server.go:3160: http: panic serving 127.0.0.1:57489: runtime error: invalid memory address or nil pointer dereference
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0x1400009c3c0)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1802 +0xdc
+panic({0x105240c60, 0x1054c1410})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/runtime/panic.go:1052 +0x2ac
+todo_app/app/controllers.session({0x105298450, 0x140000b81c0}, 0x140000a4500)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/server.go:26 +0x6c
+todo_app/app/controllers.top({0x105298450, 0x140000b81c0}, 0x140000a4500)
+	/Users/suganumanaoto/go_env/src/todo_app/app/controllers/route_main.go:8 +0x38
+net/http.HandlerFunc.ServeHTTP(0x10528e088, {0x105298450, 0x140000b81c0}, 0x140000a4500)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1054d4ec0, {0x105298450, 0x140000b81c0}, 0x140000a4500)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400015c000}, {0x105298450, 0x140000b81c0}, 0x140000a4500)
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x1400009c3c0, {0x105299c40, 0x1400007d560})
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/suganumanaoto/.goenv/versions/1.17.6/src/net/http/server.go:3034 +0x4b8
